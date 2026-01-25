@@ -1,0 +1,36 @@
+@font-face {
+    font-family: Poppins;
+    src: url("../asset/font/Poppins-Regular.ttf");
+}
+
+@import "tailwindcss";
+
+@theme{
+    --font-Poppins: Poppins, "sans-serif";
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-up {
+    animation: fadeUp 0.8s ease-out forwards;
+}
+
+.scroll-hidden {
+    opacity: 0;
+    transform: translateX(20px);
+}
+
+.scroll-show {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.8s ease-out;
+}
